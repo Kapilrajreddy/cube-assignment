@@ -1,4 +1,3 @@
-// src/components/PhotoGrid.js
 import React, { useEffect, useState } from "react";
 import "../Styles/PhotoGrid.css";
 
@@ -14,11 +13,11 @@ function PhotoGrid() {
   };
 
   useEffect(() => {
-    fetchPhotos(); // Fetch photos immediately on first render
+    fetchPhotos();
 
-    const intervalId = setInterval(fetchPhotos, 10000); // Update photos every 10 seconds
+    const intervalId = setInterval(fetchPhotos, 10000);
 
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
