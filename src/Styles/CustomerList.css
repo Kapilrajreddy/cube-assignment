@@ -1,0 +1,5 @@
+.customer-list {
+  padding: 10px;
+  overflow: auto;
+  position: relative;
+}
